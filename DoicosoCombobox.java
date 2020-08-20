@@ -117,7 +117,7 @@ public class DoicosoCombobox extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public static String convertNumber(int n, int b) {
+   /* public static String convertNumber(int n, int b) {
         if (n < 0 || b < 2 || b > 16 ) {
             return "";
         }
@@ -140,7 +140,7 @@ public class DoicosoCombobox extends javax.swing.JFrame {
             remainder = remainder / b;
         }
         return sb.reverse().toString();
-    }
+    }*/
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         System.exit(0);
@@ -160,7 +160,7 @@ public class DoicosoCombobox extends javax.swing.JFrame {
         int b = Integer.parseInt(txt1.getText());
         int c = Integer.valueOf(a);
         
-        txt2.setText(convertNumber(b, c));
+        txt2.setText(String.format(Integer.toString(b, c)));
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
